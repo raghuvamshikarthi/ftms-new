@@ -39,6 +39,9 @@ class FTMSDatabase(context: Context) :
                 "    UpdatedDate     DATETIME                            NOT NULL,\n" +
                 "    UpdatedByUserId INT                                 NOT NULL\n" +
 
+
+
+
                 ");\n"
         db.execSQL(createVillage)
 
