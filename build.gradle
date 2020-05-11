@@ -4,8 +4,7 @@ buildscript {
     ext.kotlin_version = '1.3.72'
     repositories {
         google()
-        jcenter()
-        
+      jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.6.2'
@@ -19,12 +18,11 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
         maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
 
-
-    }
-}
+        jcenter()
+    }}
 
 task clean(type: Delete) {
     delete rootProject.buildDir
